@@ -1,0 +1,119 @@
+.pagina-tarefa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #1a1a1a, #2c003e);
+}
+
+.container2 {
+  background-color: #1f1f1f;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+  width: 350px;
+  text-align: center;
+  margin-top: 90px; /* espaço para a navbar */
+}
+
+h2 {
+  color: #bb86fc;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.input-tarefa,
+.input-data {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+.botao-adicionar,
+.botao-limpar {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #bb86fc;
+  color: #1f1f1f;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.botao-adicionar:hover,
+.botao-limpar:hover {
+  background-color: #9b59b6;
+}
+
+.lista-tarefas {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.lista-tarefas li {
+  background: #2a2a2a;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.concluida span {
+  text-decoration: line-through;
+  color: #777;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: center;
+  width: 90%;
+  height: 60px;
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  z-index: 1000;
+}
+
+.logo-navbar {
+  color: #bb86fc;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s;
+  font-size: 13px;
+  line-height: 1;
+}
+
+.nav-links li:hover {
+  color: #bb86fc;
+}

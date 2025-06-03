@@ -1,0 +1,100 @@
+/* src/pages/Bemvindo/styles.css */
+
+/* Reset básico e fonte global */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Importa a fonte */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Estilo principal da página */
+.pagina-bemvindo {
+  background-image: url('../../assets/images/fundo%20roxo.jpg'); /* Corrigido: espaço vira %20 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  text-shadow: 1px 1px 2px rgba(154, 59, 218, 0.8);
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Título com efeito gradiente e animação */
+.pagina-bemvindo h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+
+  background: linear-gradient(45deg, #ff00ff, #8b2e8b, #ff00ff);
+  background-size: 200% 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: brilhoTexto 3s ease-in-out infinite;
+}
+
+/* Parágrafo com leve brilho */
+.pagina-bemvindo p {
+  font-size: 1.2rem;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+/* Botão com brilho e efeito hover */
+.botao-bemvindo {
+  width: 50%;
+  max-width: 280px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+
+  background: linear-gradient(45deg, rgba(255, 0, 255, 0.6), rgba(139, 46, 139, 0.6));
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+  box-shadow: 0 0 10px #ff00ff, 0 0 20px #8b2e8b;
+}
+
+.botao-bemvindo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ff00ff, 0 0 30px #8b2e8b;
+  opacity: 0.95;
+}
+
+/* Animação gradiente para o texto do título */
+@keyframes brilhoTexto {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Estilo da logo */
+.logo {
+  width: 400px;
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 20px;
+}
